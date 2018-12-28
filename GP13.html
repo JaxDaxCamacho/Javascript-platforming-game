@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="description" content="Meta tags">
+		<meta name="keywords" content="acin,bootcamp,ECMAscript">
+		<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+		<meta name="author" content="David Camacho">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<title>Guia Pratico 13</title>
+	</head>
+    <body>
+        <div id="header" class="container-fluid">
+            <h1><i class="fas fa-gamepad"></i> Warrior GAME</h1></div>
+
+        <div id="Content" class="container-fluid">
+        <div id="gameContainer" class="container">
+            <div class="row justify-content-md-center">
+                <button id="restart" class="btn btn-warning" onclick=restart()> RESTART <i class="fas fa-sync"></i></button>
+            </div>    
+        <div class="row justify-content-md-center">
+         <div class="col col-lg-2"> </div>
+         <div class="col-md-auto">
+        
+        <canvas  id="myCanvas" width="500" height="600" ></canvas>
+        </div>
+        <div class="col col-lg-2">
+        <div id="stats">
+            <h2>Time</h2>
+            <div id="clock"></div>
+            <h2>Score</h2>
+            <div id="score"></div>
+            <h2>Lifes</h2>
+            <div id="lifes"><canvas id="lifecanvas" width="120" heigth="50"></canvas></div>
+            <p>move with WASD</p>
+            </div>
+        </div>
+        
+        </div>
+        <div class="row justify-content-md-center">
+                <button id="pause" class="btn btn-warning" onclick=pausar()>PAUSE <i class="fas fa-pause"></i></button>
+                <button id="play" class="btn btn-warning" onclick=jogar()>PLAY <i class="fas fa-play"></i></button>
+                </div>
+    </div>
+        </div>
+    </div>
+        <div id="footer" class="container-fluid">
+                <div class="row justify-content-md-center">
+            <h1><i class="fas fa-gamepad"></i> Warrior GAME</h1>
+        </div>
+            <div class="row justify-content-md-center">
+            <form>
+                    <div class="row justify-content-md-center">
+                <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                Best Score:<input type="number" class="form-control" id="pontos" onload=updatePontos() disabled placeholder="1234">
+            </div>
+            <div class="row">
+                    <div class="col col-lg-2"> </div>
+                    <div class="col col-lg-2"> </div>
+                    <div class="col col-lg-2">
+                <input type="submit" id="submit" class="btn btn-danger" value="Submit">
+                </div></div>
+
+            </form>
+        </div>
+        
+
+        <script src="scripts/warrior_game.js"></script>
+</body>
+</html>
